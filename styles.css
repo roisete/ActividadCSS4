@@ -1,0 +1,347 @@
+/*Estilos generales*/
+* {
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("./img/paven.png");
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    color: #529125;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #70b231;
+}
+
+/*Estilos de cabecera*/
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 140px;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #529125;
+    text-shadow: 0px 2px 4px #333333;
+}
+
+nav {
+    background-color: #333333;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 0px 2px grey;
+}
+
+nav ul {
+    width: 1130px;
+    margin: auto;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    line-height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 0.5px solid grey;
+}
+
+nav ul li:last-child {
+    /*Incluir un borde al final del último elemento del menú*/
+    border-right: 0.5px solid grey;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+}
+
+nav ul li:hover {
+    box-shadow: 0px 0px 4px grey inset;
+}
+
+/*Estilos del contenido*/
+
+#content {
+    width: 1250px;
+    min-height: 1100px;
+    margin: auto;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+#aside {
+    margin-top: 20px;
+    width: 200px;
+    float: left;
+    background-color: white;
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+
+#aside .widget {
+    margin: auto;
+    text-align: center;
+    width: 180px;
+}
+
+#aula1,
+#aula2,
+#login {
+    padding: 8px 0px;
+    border-bottom: 1px dashed black;
+}
+
+#enlaces {
+    padding: 10px 0px;
+}
+
+#aside .widget h3 {
+    background-color: #ebebeb;
+    border-top: 0.5px solid #ccc;
+    border-bottom: 0.5px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#usuario_entrada,
+#usuario_av1,
+#usuario_av2 {
+    padding: 1px;
+    margin-bottom: 2px;
+}
+
+#passwd_entrada,
+#passwd_av1,
+#passwd_av2 {
+    padding: 1px;
+    margin-bottom: 2px;
+}
+
+#aside .widget input[type="submit"] {
+    background-color: #70b231;
+    border: 0.5px solid green;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#aside .widget a {
+    display: block;
+    text-align: left;
+}
+
+#aside .widget ul li a {
+    color: #529125;
+}
+
+#aside .widget ul li a:hover {
+    color: #70b231;
+}
+
+#aside .widget input[type="submit"]:hover {
+    border: 0.5px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+}
+
+#sections {
+    float: left;
+    width: 75%;
+}
+
+#sections #frontend {
+    margin-left: 60px;
+    margin-top: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    text-align: justify;
+    padding: 20px;
+}
+
+#sections #frontend h2 {
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 0.5px solid #ccc;
+}
+
+article {
+    padding: 10px;
+}
+
+#sections #frontend .stickers .stickerOne {
+    margin-top: -40px;
+    float: left;
+}
+
+#sections #frontend .stickers .stickerTwo {
+    margin-top: -40px;
+    float: right;
+}
+
+/*Pie de página*/
+footer {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #333333;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0px 0px 2px grey;
+    padding: 10px;
+}
+
+/* Media queries */
+
+@media (max-width: 1500px) {
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul li {
+        font-size: 15px;
+        padding: 0 17px;
+        border-bottom: 0.5px solid grey;
+        text-align: center;
+        background-color: #333333;
+    }
+
+    #sections{
+        width: 70%;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    header h1{
+        font-size: 35px;
+    }
+    header img{
+        width: 110px;
+    }
+
+    nav ul{
+        width: 100%;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        padding: 0 18px;
+        border-bottom: 0.5px solid grey;
+        text-align: center;
+        background-color: #333333;
+    }
+
+    #sections{
+        width: 50%;
+        margin-left: -20px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    header h1{
+        font-size: 30px;
+    }
+    header img{
+        width: 100px;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        font-size: 15px;
+        padding: 0 10px;
+        border-bottom: 0.5px solid grey;
+        text-align: center;
+        background-color: #333333;
+    }
+
+    #sections{
+        width: 45%;
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header h1{
+        font-size: 30px;
+    }
+    header img{
+        width: 100px;
+    }
+
+    #content {
+        width: 80%;
+        padding: 10px;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        float: none;
+        border-bottom: 0.5px solid grey;
+        text-align: center;
+    }
+
+    #aside {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #aside .widget {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #aside .widget a {
+        text-align: center;
+    }
+
+    #sections {
+        width: 100%;
+        float: none;
+        margin-left: 5px;
+    }
+
+    #sections #frontend {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+
